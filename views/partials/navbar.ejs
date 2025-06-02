@@ -1,0 +1,33 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            <a href="/">Tusenfryd</a>
+        </div>
+        
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="/" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/attractions" class="navbar-link">Attractions</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/about" class="navbar-link">About</a>
+            </li>
+            <li class="navbar-item navbar-btn">
+                <a href="/login" class="button">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    // Mobile menu toggle
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.navbar-menu');
+    
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    });
+</script>
